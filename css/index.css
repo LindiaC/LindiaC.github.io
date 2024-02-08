@@ -1569,6 +1569,13 @@ a {
 a:hover {
   color: #49b1f5;
 }
+#site-title,
+#site-subtitle,
+.site-name,
+#aside-content .author-info__name,
+#aside-content .author-info__description {
+  font-family: Handlee;
+}
 .is-center {
   text-align: center;
 }
@@ -3324,13 +3331,6 @@ h1.page-title + .tag-cloud-list {
   -ms-transition: all 0.5s;
   transition: all 0.5s;
 }
-#page-header:not(.not-top-img):before {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: var(--mark-bg);
-  content: '';
-}
 #page-header.full_page {
   height: 100vh;
   background-attachment: fixed;
@@ -3350,8 +3350,8 @@ h1.page-title + .tag-cloud-list {
 }
 #page-header #site-title {
   margin: 0;
-  color: var(--white);
-  font-size: 1.85em;
+  color: var(--black);
+  font-size: 5em;
 }
 @media screen and (min-width: 768px) {
   #page-header #site-title {
@@ -3359,7 +3359,7 @@ h1.page-title + .tag-cloud-list {
   }
 }
 #page-header #site-subtitle {
-  color: var(--light-grey);
+  color: var(--grey);
   font-size: 1.15em;
 }
 @media screen and (min-width: 768px) {
